@@ -35,13 +35,6 @@
 .install-card strong { display: block; margin-top: 11px; font-family: Manrope, sans-serif; font-size: 12px; }
 .install-card p { margin: 4px 0 10px; color: #898591; font-size: 10px; line-height: 1.5; }
 .install-card button, .text-link, .course-open { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; color: #7251c1; cursor: pointer; font-size: 10px; font-weight: 700; }
-.profile-button { display: flex; width: 100%; align-items: center; gap: 10px; border: 0; border-top: 1px solid var(--line); background: transparent; padding: 14px 2px 3px; cursor: pointer; text-align: left; }
-.avatar, .top-avatar { display: grid; flex: 0 0 auto; place-items: center; border-radius: 50%; background: #f6d8c8; color: #7c5145; font-size: 10px; font-weight: 700; }
-.avatar { width: 35px; height: 35px; }
-.profile-copy strong, .profile-copy small { display: block; }
-.profile-copy strong { font-size: 11px; }
-.profile-copy small { margin-top: 2px; color: #96929b; font-size: 10px; }
-.profile-dots { margin-left: auto; color: #aaa5ae; letter-spacing: 2px; }
 
 .main-area { min-height: 100vh; margin-left: 252px; }
 .topbar { position: sticky; top: 0; z-index: 10; display: flex; height: 68px; align-items: center; justify-content: space-between; border-bottom: 1px solid #eeedf0; background: rgb(250 249 248 / 94%); padding: 0 46px; backdrop-filter: blur(12px); }
@@ -51,7 +44,6 @@
 .topbar-right { display: flex; align-items: center; gap: 19px; }
 .top-search { display: flex; align-items: center; gap: 8px; border: 0; background: transparent; color: #99959e; cursor: pointer; font-size: 11px; }
 .top-search kbd { margin-left: 13px; border: 1px solid #e8e6e9; border-radius: 4px; background: #fff; padding: 2px 5px; color: #aaa6ad; font: 10px 'DM Sans', sans-serif; }
-.top-avatar { width: 31px; height: 31px; font-size: 9px; }
 .mobile-menu { display: none; border: 0; background: none; padding: 4px; cursor: pointer; }
 .page-content { width: min(1110px, 100%); margin: 0 auto; padding: 34px 46px 55px; }
 .welcome-row { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 23px; }
@@ -349,7 +341,6 @@ h1, h2, h3, p { margin-top: 0; }
   .topbar-right { gap: 0; margin-left: auto; }
   .top-search { padding: 5px; }
   .top-search span, .top-search kbd { display: none; }
-  .top-avatar { width: 29px; height: 29px; }
   .page-content { padding: 27px 18px 40px; }
   .welcome-row { align-items: flex-start; gap: 10px; }
   .welcome-row h1, .page-heading h1 { font-size: 25px; }

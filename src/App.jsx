@@ -230,7 +230,7 @@ function App() {
   }
 
   const sectionTitles = {
-    overview: ['Bom dia, Márcia', 'Continua a aprender ao teu ritmo. Cada passo conta!'],
+    overview: ['Bom dia, Studanti', 'Continua a aprender ao teu ritmo. Cada passo conta!'],
     courses: ['Os meus cursos', 'Escolhe um curso e continua de onde ficaste.'],
     notes: ['Apontamentos', 'Escreve as tuas notas de cada curso para rever sempre que quiseres.'],
     quizzes: ['Questionários', 'Põe os teus conhecimentos à prova, sem pressão.'],
@@ -262,9 +262,6 @@ function App() {
             <p>Instala a aplicação no teu dispositivo.</p>
             <button onClick={installApp}>Instalar aplicação <Icon name="arrow" size={15} /></button>
           </div>
-          <button className="profile-button" aria-label="Perfil de Márcia Costa">
-            <span className="avatar">MC</span><span className="profile-copy"><strong>Márcia Costa</strong><small>A minha conta</small></span><span className="profile-dots">···</span>
-          </button>
         </div>
       </aside>
 
@@ -274,7 +271,6 @@ function App() {
           <span className="breadcrumb">A tua escola <span>/</span> <strong>{selectedCourse ? selectedCourse.title : navigation.find((item) => item.id === activeSection)?.label || 'Visão geral'}</strong></span>
           <div className="topbar-right">
             <button className="top-search" onClick={() => document.querySelector('#course-search')?.focus()} aria-label="Pesquisar cursos"><Icon name="search" size={18} /><span>Pesquisar</span><kbd>⌘ K</kbd></button>
-            <span className="top-avatar">MC</span>
           </div>
         </header>
 
@@ -331,7 +327,7 @@ function Overview({ progress, completedLessons, overallProgress, weeklyActivity,
   return (
     <>
       <section className="welcome-row">
-        <div><div className="eyebrow">{new Intl.DateTimeFormat('pt-PT', { weekday: 'long', day: 'numeric', month: 'long' }).format(new Date())} <span className="eyebrow-spark">✳</span></div><h1>Bom dia, Márcia <span className="wave">✦</span></h1><p>Continua a aprender ao teu ritmo. Cada passo conta!</p></div>
+        <div><div className="eyebrow">{new Intl.DateTimeFormat('pt-PT', { weekday: 'long', day: 'numeric', month: 'long' }).format(new Date())} <span className="eyebrow-spark">✳</span></div><h1>Bom dia, Studanti <span className="wave">✦</span></h1><p>Continua a aprender ao teu ritmo. Cada passo conta!</p></div>
         <div className="streak-pill"><span>✦</span> {streak} {streak === 1 ? 'dia' : 'dias'} seguidos</div>
       </section>
       <section className="hero-card">
